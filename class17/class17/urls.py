@@ -1,5 +1,5 @@
 """
-URL configuration for class15 project.
+URL configuration for class17 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,14 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from course import views
+# from course import views as cv
+# from fees import views as fv
+from course.views import learn_django
+from fees.views import fees_django
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', views.index),
-    path('learndj/',views.learn_django ),
-    path('learnpy/',views.learn_python ),
-    path('learnvar/',views.learn_var ),
-    path('learnmath/',views.learn_math ),
-    path('learnfor/',views.learn_format ),
+    # path('learndj/', cv.learn_django),
+    # path('feesdj/', fv.fees_django),    
+    path('learndj/', learn_django),
+    path('feesdj/', fees_django),
 ]
