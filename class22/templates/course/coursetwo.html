@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+</head>
+<body style="background-color: rgb(1, 20, 1); font-style: italic; color: yellow;">
+   
+   
+    <h1>
+<!--         
+        {% for nm in names %}
+        {{forloop.counter}}. {{nm}} <br> 
+        {%empty%}
+        yha kuch nhi h 
+        {% endfor %} -->
+
+        <!-- {{student}} <br> <br>
+        {{student.stu1}} <br>
+        {{student.stu2}} <br>
+        {{student.stu3}} <br>
+        {{student.stu4}} <br>
+        {{student.stu1.name}} <br>
+        {{student.stu1.roll}} <br>
+        {{student.stu2.name}} <br>
+        {{student.stu2.roll}} <br>
+        {{student.stu3.name}} <br>
+        {{student.stu3.roll}} <br>
+        {{student.stu4.name}} <br>
+        {{student.stu4.roll}} <br> -->
+        
+
+        <!-- {{data}} <br> <br>
+        {% for key, value in data.items%}
+        {{key}} = {{value}}
+        {% endfor %} -->
+
+        <!-- {{data}} <br> <br> -->
+        {% for key, value in data.items%}
+        {{key}} <br>
+        <!-- {{key}} = {{value}} <br> -->
+        {% for k, v in value.items%}
+        
+        {{forloop.parentloop.counter}}. {{k}} = {{v}} <br>
+
+        {% endfor %}
+        {% endfor %}
+
+
+
+
+    </h1>
+</body>
+</html>

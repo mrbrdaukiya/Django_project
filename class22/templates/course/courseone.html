@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body>
+    <!-- <h1>Hello {{cname}} </h1>
+    <h1>Name : {{nm}} Duration : {{du}} Total Seats : {{st}} </h1>
+    <h1>Name : {{nm}} </h1>
+    <h1>Durat ion : {{du}}</h1>
+    <h1>Total Seats : {{st}} </h1> -->
+
+    <!-- <h1> {{nm | upper}} </h1>
+    <h1> {{nm | truncatechars:4}} </h1>
+    <h1> {{nm | truncatewords:2}} </h1>
+    <h1> {{dt| date:'D d M Y '}} </h1>
+    <h1> {{dt| time:'H:i A'}} </h1>
+    <h1> {{dt|date:'SHORT_DATE_FORMAT'}} </h1>
+    <h1> {{dt|time:'TIME_FORMAT'}} </h1>
+
+    <h1>Example 5.1</h1>
+    <h2>{{p1}}</h2>
+    <h2>{{p2}}</h2>
+    <h2>{{p3}}</h2>
+
+    
+    <h1>Example 5.2</h1>
+    <h2>{{p1| floatformat}}</h2>
+    <h2>{{p2| floatformat}}</h2>
+    <h2>{{p3| floatformat}}</h2>
+
+    
+    
+    <h1>Example 5.3</h1>
+    <h2>{{p1| floatformat:3}}</h2>
+    <h2>{{p2| floatformat:3}}</h2>
+    <h2>{{p3| floatformat:3}}</h2>
+
+    
+    
+    <h1>Example 5.4</h1>
+    <h2>{{p1| floatformat:0}}</h2>
+    <h2>{{p2| floatformat:0}}</h2>
+    <h2>{{p3| floatformat:0}}</h2>
+
+    
+    
+    <h1>Example 5.5</h1>
+    <h2>{{p1| floatformat:-3}}</h2>
+    <h2>{{p2| floatformat:-3}}</h2>
+    <h2>{{p3| floatformat:-3}}</h2> -->
+
+    
+    <!-- {% if nm %}
+    <h1>Hello {{nm}}</h1>
+    {% endif %} -->
+
+    
+    <h1>Exampla 8.1</h1>
+    {% if nm and st %}
+    <h2>{{st}} seats are available for {{nm}} course</h2>
+    {% endif %}
+
+    
+    
+    <h1>Exampla 8.2</h1>
+    {% if nm or st %}
+    <h2>{{st}} seats are available for {{nm}} course</h2>
+    {% endif %}
+
+    
+{% comment %}     
+    <h1>Exampla 8.3</h1>
+    {% if nm not st %}
+    <h2> seats not available for</h2>
+    {% endif %}
+
+     {% endcomment %}
+
+    {% if nm == 'Django' %}
+    <h3>Hello {{nm}}</h3>
+    {% else %}
+    <h3>No Course Available </h3>
+    {% endif%}
+
+
+</body>
+</html>
