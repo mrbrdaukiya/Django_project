@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title  %}Other{% endblock title  %}</title>
+    
+
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+
+    
+    {% block corecss %}
+    <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
+    {% endblock corecss %}
+
+</head>
+<body>
+<h2>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/about">About</a></li>
+        <li><a href="{% url 'aboutus' %}">About</a></li>
+
+        <li><a href="/cor/learndj">Django Course</a></li>
+        {% url 'coursename' as co %}
+        <li><a href="{{co}}">Django Course</a></li>
+    </ul>
+</nav>
+</h2>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<br> <br>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<br> <br>
+<button type="button" class="btn btn-success">Success</button>
+
+<i class="fa-solid fa-chart-simple"></i>
+
+<h1>
+    {% block content %}{% endblock content %}
+</h1>
+
+
+
+<script src="{% static 'core/js/jquery.js' %}"></script>
+<script src="{% static 'core/js/popper.js' %}"></script>
+<script src="{% static 'core/js/all.min.js' %}"></script>
+<script src="{% static 'core/js/bootstrap.js' %}"></script>
+
+
+</body>
+</html>

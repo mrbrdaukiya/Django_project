@@ -1,0 +1,35 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block cotent %}
+<div class="mt-5">
+    <div class="text-center">
+    <img src="{% static 'core/img/pic1.jpeg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="300px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold">Hello</h1>
+    
+    <div class="px-4" style="line-height:2rem:">
+    <p style="text-indent:100px;">I am <b class="text-warning">Guru Choudhary</b>
+    having 5 year of full-stack web development experience for global businesses ,
+    I offer the technical expertise you are seeking for your web developer position.</p>
+    <p>Since earning my bechelor's degree in internet and web development 
+        from xyz university, I have  served as a web developer at 
+    <b class="text-warning">GS Technology</b>, one of biggest premier digital marketing 
+    and web development frim. In this position, I have led web development projects for clients
+    in diverse industries including technology manufacturing, pharmaceutical, hospitality, retail and
+    financial services.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet velit aut doloribus saepe sequi 
+        dolorum aperiam exercitationem repellat rem debitis, nam rerum cumque veritatis ea fuga consequatur. 
+        Voluptates animi et reiciendis nobis quaerat nulla, quibusdam vitae, facere minima repellendus saepe 
+        nam quae sapiente deleniti sed ad cumque! Commodi illum in quibusdam, nulla magni illo optio repellat 
+        veniam, quam perferendis eligendi!</p>
+    </div>
+</div>
+<div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+     <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+</div>
+</div>
+
+{% endblock cotent %}
